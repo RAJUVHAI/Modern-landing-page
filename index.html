@@ -35,7 +35,7 @@
             <div class="homecontent">
                 <div class="contentHome">
                     <h1>I am Raju Hossen</h1>
-                    <p>A React And Laravel Developer.</p>
+                    <p>A Professtional <span style="color:  #12D8FA ;font-weight: 800;" id="Typed"></span></p>
                     <button class="btn-grad" download><a style="color: white;outline: none;"
                             href="./cvfile/Raju's Resume.pdf" download>Download
                             CV</a></button>
@@ -363,6 +363,10 @@
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js">
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+            integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/typed.min.js"></script>
         <script type="text/javascript">
             $(".full-landing-image").ripples({
                 resolution: 512,
@@ -370,6 +374,17 @@
                 interactive: true,
                 perturbance: 0.02,
             });
+
+            var typed4 = new Typed('#Typed', {
+                strings: ['React Js Developer', 'Php Developer', 'Laravel Developer'],
+                typeSpeed: 50,
+                backSpeed: 50,
+                bindInputFocusEvents: true,
+                loop: true
+            });
+
+
+
 
         </script>
         <script src="./js/script.js"></script>
