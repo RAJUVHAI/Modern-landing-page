@@ -5,10 +5,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
+    <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
 <body>
+    <div class="preloader js-preloader flex-center">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+
+        </div>
+    </div>
     <div class="full-landing-image" id="home">
         <nav class="navbar">
             <div class="content">
@@ -367,6 +375,8 @@
             integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./js/typed.min.js"></script>
+
+        <script src="./dist/js/jquery.preloadinator.min.js"></script>
         <script type="text/javascript">
             $(".full-landing-image").ripples({
                 resolution: 512,
@@ -381,6 +391,11 @@
                 backSpeed: 50,
                 bindInputFocusEvents: true,
                 loop: true
+            });
+
+
+            $('.js-preloader').preloadinator({
+                minTime: 2000
             });
 
 

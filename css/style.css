@@ -38,8 +38,9 @@ h1, h2 , h3 , h4 , h5 , h6 ,span {
     background: #888;
 }
 ::selection{
-  background: rgb(0,123,255,0.3);
+  background: rgba(7, 110, 219, 0.993);
 }
+
 .content{
   max-width: 1250px;
   margin: auto;
